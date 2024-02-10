@@ -54,10 +54,6 @@ def save_to_csv(df_list):
     res_df.to_csv('genius_output.csv', index=False, header=True)
     return
 
-# def process_iteration(iteration):
-#     # Your iteration processing code goes here
-#     print(f"Processing iteration {iteration} in process {os.getpid()}")
-
 if __name__ == "__main__":
 
     dfs = []
@@ -74,7 +70,6 @@ if __name__ == "__main__":
             process.start()
 
         for process in processes:
-            print("process join")
             process.join(timeout=30)   
 
         df_list = []
