@@ -34,7 +34,7 @@ def get_data():
 
     
     return df_reddit
-st.image("reddit_logo.png", width=200)
+# st.image("reddit_logo.png", width=200)
 page_style()
 
 b2 = B2(endpoint=os.environ['B2_ENDPOINT'],
